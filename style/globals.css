@@ -1,0 +1,19 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+
+:root {
+    --primary: #eee;
+    --secondary: #94afa6;
+    --text-color: #333;
+    --main-color: #82cd9c;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    color: var(--text-color);
+  }

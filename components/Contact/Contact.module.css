@@ -1,0 +1,148 @@
+/* contact Section */
+.contact {
+  padding: 50px 0 0 0;
+}
+
+.contactHeading {
+  background: #eee;
+  height: 200px;
+  width: 70%;
+  right: 0;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contactHeading h1 {
+  position: absolute;
+  right: -70px;
+  top: 60px;
+  font-size: 3rem;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactLeft,
+.contactRight {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contactLeft {
+  /* background-image: linear-gradient(
+    to right top,
+    #82cd9c,
+    #9ad6ae,
+    #b1dfc0,
+    #c8e8d3,
+    #dff1e5
+  ); */
+  height: 100vh;
+
+  /* background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  /* transition: background 0.3s ease-in-out; */
+}
+.contactLeft:hover {
+  background: rgb(0, 0, 0,0.8);
+
+}
+
+.contactForm {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* height: 100%; */
+  max-width: 450px;
+  padding: 5rem;
+}
+
+.contactForm h2 {
+  margin-bottom: 15px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background-color: rgba(239, 239, 239, 0.8);
+  border-radius: 5px;
+}
+
+.contactForm .button {
+  background-color: var(--text-color);
+  color: var(--primary);
+  padding: 16px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contactForm .button:hover {
+  background-color: var(--main-color);
+}
+
+.contactRight {
+  margin-top: 4rem;
+  background-color: red;
+}
+.contactRight h2 {
+  margin-bottom: 15px;
+}
+
+.contactRight p {
+  margin-bottom: 10px;
+}
+.contactRight .fas {
+  background: var(--primary);
+  color: var(--text-color);
+  padding: 1rem 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.contactRight a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contactRight a:hover {
+  text-decoration: underline;
+}
+
+.socialMedia a {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: var(--text-color);
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.socialMedia a:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+}
