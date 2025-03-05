@@ -1,7 +1,7 @@
 export const servicesData = [
   {
     id: 1,
-    icon: "fab fa-facebook",
+    icon: "fas fa-laptop-code",
     title: "Web Design",
     description: "Creating stunning website layouts.",
   },

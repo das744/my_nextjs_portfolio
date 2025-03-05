@@ -35,9 +35,9 @@ const Hero = () => {
 
       <div className={styles.heroImage}>
         <div className={styles.socialIcons}>
-        <a href="#"><i className="fab fa-facebook-f"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
-        <a href="#"><i className="fab fa-twitter"></i></a>
+        <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i className="fa-brands fa-instagram"></i></a>
+<a href="#"><i className="fa-brands fa-twitter"></i></a>
 
         </div>
       </div>
