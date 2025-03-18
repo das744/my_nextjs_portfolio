@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from './Contact.module.css'
+import styles from './Contact.module.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,8 +9,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -20,11 +19,10 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSuccessMessage("");
-    setErrorMessage("");
+    setStatus("Sending...");
 
     try {
-      const response = await fetch("/api", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,20 +31,14 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setStatus("Message sent successfully!");
+        setStatus("✅ Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
-        setSuccessMessage("Your message has been sent successfully!");
       } else {
-        const errorData = await response.json();
-        setErrorMessage(
-          errorData.error || "Failed to send your message. Please try again."
-        );
-        setStatus("Failed to send the message. Please try again.");
+        setStatus("❌ Failed to send the message. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      setErrorMessage("An error occurred. Please try again later.");
-      setStatus("An error occurred. Please try again later.");
+      setStatus("❌ An error occurred. Please try again later.");
     }
   };
 
@@ -55,50 +47,64 @@ const Contact = () => {
       <div className={styles.contactHeading}>
         <h1>Contact</h1>
       </div>
-      <div className= {styles.contactContainer}>
+      <div className={styles.contactContainer}>
+        {/* Left Side */}
         <div className={styles.contactLeft}>
-          <form
-            className={styles.contactForm}
-            action="your-form-handler.php"
-            method="post"
-          >
-            <h2>Ready for Your next Project?</h2>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+          <form className={styles.contactForm} onSubmit={handleSubmit}>
+            <h2>Ready for Your Next Project?</h2>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
 
             <button type="submit" className={styles.button}>Send Message</button>
           </form>
+          {status && <p className={styles.statusMessage}>{status}</p>}
         </div>
 
+        {/* Right Side */}
         <div className={styles.contactRight}>
           <h2>Get in Touch</h2>
           <p>
-            <i className="fas fa-location-dot"></i> Your Address Here
+            <i className="fas fa-location-dot"></i> Melbourne, VIC
           </p>
           <p>
-            <i class="fas fa-phone"></i>
-            <a href="tel:+1234567890">+1 234 567 890</a>
+            <i className="fas fa-phone"></i>
+            <a href="tel:+610430224546">+61 0430224546</a>
           </p>
           <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:youremail@example.com">youremail@example.com</a>
+            <i className="fas fa-envelope"></i>
+            <a href="mailto:ajanta744@gmail.com">ajanta744@gmail.com</a>
           </p>
-          <div class={styles.socialMedia}>
-            <a href="https://facebook.com/yourprofile" target="_blank">
-              Facebook
-            </a>
-            <a href="https://twitter.com/yourprofile" target="_blank">
-              Twitter
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-              LinkedIn
-            </a>
+          <div className={styles.socialMedia}>
+            <a href="https://codepen.io/yourprofile" target="_blank">CodePen</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -107,6 +113,8 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
 
 // import styles from '@/components/Contact/Contact.module.css';
 

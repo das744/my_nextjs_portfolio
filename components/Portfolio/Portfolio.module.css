@@ -118,10 +118,12 @@
   }
   
   .websiteButton:hover {
-    background-color: #0056b3;
+    background:  var( --main-color);
+    color: white;
   }
   
   .githubButton:hover {
-    background-color: #555;
+    background-color:var( --main-color);
+    color: black
   }
   

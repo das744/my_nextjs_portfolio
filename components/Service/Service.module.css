@@ -3,6 +3,7 @@
       .services {
         margin-top: 2rem;
         padding: 20px 20px;
+       
       }
 
       .services .heading {
@@ -17,6 +18,7 @@
         position: absolute;
         right: -30px;
         top: 70px;
+        font-style: italic;
         /* transform: translate(50%, 50%) rotate(-90deg); */
         font-size: 3rem;
         text-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -37,37 +39,38 @@
         height: 200px;
         border-radius: 10px;
         border: .5px solid black;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 2rem 2rem 2rem 0 rgba(160, 159, 159, 0.1);
       }
       .serviceBox:hover {
         background: #eee;
         border: none;
+        transform: scaleY(1.1);
       }
 
       .serviceBox:nth-child(1) i {
-        background: rgb(248, 134, 134);
+        background: rgb(248, 134, 134 ,0.4);
       }
       .serviceBox:nth-child(2) i {
-        background: rgb(201, 250, 204);
+        background: rgba(185, 248, 188, 0.4);
       }
       .serviceBox:nth-child(3) i {
-        background: rgb(177, 186, 246);
+        background: rgba(185, 179, 253, 0.4);
       }
       .serviceBox:nth-child(4) i {
-        background: rgb(185, 232, 251);
+        background: rgba(175, 244, 253, 0.4);
       }
       .serviceBox:nth-child(5) i {
-        background: rgba(247, 252, 204);
+        background: rgba(244, 202, 177, 0.4);
       }
       .serviceBox:nth-child(6) i {
-        background: rgb(228, 252, 204);
+        background: rgba(246, 185, 234, 0.4);
       }
 
       .serviceBox i {
         position: absolute;
         color: black;
         top: -25px;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         font-size: 1.7rem;
         padding: 20px;

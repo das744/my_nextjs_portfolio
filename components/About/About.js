@@ -12,9 +12,12 @@ const About = () => {
       <div className={styles.aboutContainer}>
         <div className={styles.aboutImg}></div>
         <div className={styles.aboutContent}>
-          <h1>Who I am?</h1>
+          <h1>About Me</h1>
           <p>
-          I am a passionate web developer with a focus on creating beautiful, functional, and user-friendly websites. I believe that a great website not only looks good but also functions smoothly and efficiently. That's why I'm dedicated to creating websites that provide an optimal user experience.
+          I’m a Full Stack Web Developer dedicated to building visually stunning and highly functional websites.
+           With a strong focus on user experience, performance, and responsiveness,
+           I create custom solutions designed to meet business needs. My expertise lies in blending 
+           creativity with technology to deliver smooth and impactful digital experiences.
           </p>
           <a href="#contact"><button>Contact Me</button></a>
         </div>

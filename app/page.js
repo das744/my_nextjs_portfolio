@@ -17,7 +17,6 @@ export const metadata = {
     "Web Developer in Melbourne",
     " Website Developers Melbourne",
     " Website Development Melbourne",
- 
     "Web Developer Near Me",
     "Website Designer Near Me",
    
@@ -90,8 +89,9 @@ export default function Home() {
       {/* Main Components */}
       <Hero/>
       <Service/>
-      <Skills/>
       <About />
+      <Skills/>
+    
       <Portfolio />
       <Contact />
       <Footer/>

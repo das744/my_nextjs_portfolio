@@ -5,6 +5,7 @@
         padding: 50px 20px;
         position: relative;
         overflow: hidden;
+       
       }
 
       .skills .heading {
@@ -38,7 +39,7 @@
       }
 
       .skillBox {
-        box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 2rem 2rem 2rem 0 rgba(0, 0, 0, 0.1);
         padding: 30px 10px 50px 10px;
         border-radius: 10px;
         text-align: center;
@@ -65,6 +66,12 @@
       }
       .skillBox:nth-child(6) {
         background: rgba(246, 185, 234, 0.3);
+      }
+      .skillBox:nth-child(7) {
+        background: rgba(244, 202, 177, 0.3);
+      }
+      .skillBox:nth-child(8) {
+        background: rgba(171, 171, 173, 0.3);
       }
       .skillBox img {
         width: 100%;

@@ -9,10 +9,10 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>LOGO</div>
+        <div className={styles.logo}>AD Portfolio</div>
         <ul className={menuOpen ? `${styles.navLinks} ${styles.active}` : styles.navLinks}>
           <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
+          <li><a href="#services">Service</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div className={styles.menuToggle} onClick={() => setMenuOpen(!menuOpen)}>
@@ -21,12 +21,12 @@ const Hero = () => {
       </nav>
       
       <div className={styles.heroContent}>
-        <h1>Heading Here</h1>
-        <button>Get Started</button>
-        <div className={styles.tabs}>
+        <h1>Ajanta – Crafting Engaging & High-Performance Websites</h1>
+        <a href="#contact"> <button>Get Started</button> </a>
+        {/* <div className={styles.tabs}>
           <button>iOS Version</button>
           <button>Android Version</button>
-        </div>
+        </div> */}
         <div className={styles.buttons}>
           <a href="https://yourwebsite.com" target="_blank" className={styles.button}>Website</a>
           <a href="https://github.com/yourrepo" target="_blank" className={styles.button}>GitHub</a>
@@ -43,9 +43,9 @@ const Hero = () => {
       </div>
 
       <div className={styles.features}>
-        <div className={styles.feature}> Feature 1</div>
-        <div className={styles.feature}> Feature 2</div>
-        <div className={styles.feature}> Feature 3</div>
+        <div className={styles.feature}><i class="fas fa-check-circle"></i> Custom Designs</div>
+        <div className={styles.feature}><i class="fas fa-check-circle"></i>  User Focused</div>
+        <div className={styles.feature}>  <i class="fas fa-check-circle"></i> High Performance</div>
       </div>
     </section>
   );

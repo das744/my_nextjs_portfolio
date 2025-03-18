@@ -2,26 +2,26 @@ export const servicesData = [
   {
     id: 1,
     icon: "fas fa-laptop-code",
-    title: "Web Design",
-    description: "Creating stunning website layouts.",
+    title: "Web Design & Development",
+    description: "Custom-built websites that align with business goals.",
   },
   {
     id: 2,
     icon: "fas fa-code",
-    title: "Development",
-    description: "Building functional web applications.",
+    title: "UI/UX Design",
+    description: "Engaging, user-friendly interfaces for better user experience.",
   },
   {
     id: 3,
     icon: "fas fa-mobile-alt",
-    title: "Responsive Design",
-    description: "Optimized for all devices.",
+    title: "E-Commerce Solutions",
+    description: "Scalable online stores with seamless checkout experiences.",
   },
   {
     id: 4,
     icon: "fas fa-search",
-    title: "SEO",
-    description: "Improving website rankings.",
+    title: "SEO Optimization",
+    description: "Enhancing website speed and search rankings.",
   },
   {
     id: 5,
@@ -32,7 +32,7 @@ export const servicesData = [
   {
     id: 6,
     icon: "fas fa-tools",
-    title: "Maintenance",
-    description: "Keeping websites updated.",
+    title: "Website Maintenance & Support",
+    description: "Keeping your site updated and secure",
   },
 ];

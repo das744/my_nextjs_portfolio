@@ -13,12 +13,11 @@
   background: var(--primary);
   height: 100%;
   padding: 170px 10px 10px 10px;
- 
   text-align: center;
 }
 
 .heroContent h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .heroContent button {
@@ -33,7 +32,7 @@
 }
 
 .heroContent button:hover {
-  background: gray;
+  background: var( --main-color);
 }
 
 /* HERO BUTTONS */
@@ -55,7 +54,7 @@
 }
 
 .button:hover {
-  background: gray;
+  background: var( --main-color);
 }
 
 /* TABS */
@@ -75,7 +74,7 @@
 }
 
 .tabs button:hover {
-  background: black;
+  background: var( --main-color);
   color: white;
 }
 
@@ -106,7 +105,7 @@
 }
 
 .socialIcons a:hover {
-  color: black;
+  color: var( --main-color);
 }
 
 /* FEATURES */
@@ -116,7 +115,8 @@
   padding: 20px 30px;
   border-radius: 50px;
   bottom: 30px;
-  left: 10%;
+  font-size: 1rem;
+  left: 5%;
   display: flex;
   gap: 20px;
 }
@@ -131,14 +131,18 @@
   top: 30px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(219, 218, 218, 0.6);
+  background: rgba(219, 218, 218, 0.7);
   padding: 10px 30px;
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
   align-items: center;
   z-index: 1000;
+}
+.nav .logo{
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .nav ul {
@@ -173,20 +177,23 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+
   }
 
   .heroContent,
   .heroImage {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
   }
 
   .heroContent {
     order: 1;
+    height: 100vh;
   }
 
   .heroImage {
     order: 2;
+    
   }
 
   /* NAVIGATION MENU */
@@ -203,7 +210,7 @@
     width: 100%;
     text-align: center;
     transform: translateX(-50%);
-    background: #eee;
+    background: #dcdbdb;
     padding: 2rem 5rem;
     border-radius: 10px;
   }
@@ -220,6 +227,7 @@
   /* SOCIAL ICONS */
   .socialIcons {
     flex-direction: row;
-    margin-left: 1rem;
+    margin: 1rem;
+    
   }
 }
