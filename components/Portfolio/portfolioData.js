@@ -40,11 +40,11 @@ const portfolioData = [
     title: "Web Design Website",
     description: "An educational platform offering tutor booking, and interactive resources.",
     website: "https://www.webdeveloperinmelbourne.com.au/",
-    github: "https://github.com/wdm",
+    github: "https://github.com/das744/WDM",
   },
   {
     id: 6,
-    image: "/imgs/photography.png",
+    image: "/imgs/3.png",
     title: "Photography Website",
     description: "Photography Website.",
     website: "http://photography.com.s3-website-ap-southeast-2.amazonaws.com/",
@@ -63,7 +63,7 @@ const portfolioData = [
     image: "/imgs/dental.png",
     title: "Dental Website",
     description: "An educational platform offering tutor booking, and interactive resources.",
-    website: "https://merndaguitarlesson.vercel.app/",
+    // website: "https://merndaguitarlesson.vercel.app/",
     github: "https://github.com/das744/dental_clinic",
   },
 

@@ -91,7 +91,7 @@ const Contact = () => {
         <div className={styles.contactRight}>
           <h2>Get in Touch</h2>
           <p>
-            <i className="fas fa-location-dot"></i> Melbourne, VIC
+            <i className="fas fa-location-dot"></i> Mernda, Melbourne, VIC
           </p>
           <p>
             <i className="fas fa-phone"></i>
@@ -102,9 +102,9 @@ const Contact = () => {
             <a href="mailto:ajanta744@gmail.com">ajanta744@gmail.com</a>
           </p>
           <div className={styles.socialMedia}>
-            <a href="https://codepen.io/yourprofile" target="_blank">CodePen</a>
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://codepen.io/ajantad" target="_blank">CodePen</a>
+            <a href="https://github.com/das744" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/ajanta" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>

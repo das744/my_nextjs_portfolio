@@ -17,7 +17,8 @@
 }
 
 .heroContent h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+ 
 }
 
 .heroContent button {
@@ -82,7 +83,7 @@
 .heroImage {
   width: 50%;
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?q=80&w=2302&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  background: url("../../public/imgs/2.jpg")
     no-repeat center center/cover;
   position: relative;
 }
@@ -94,7 +95,7 @@
   right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .socialIcons a {
@@ -142,7 +143,7 @@
 }
 .nav .logo{
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .nav ul {

@@ -21,23 +21,23 @@ const Hero = () => {
       </nav>
       
       <div className={styles.heroContent}>
-        <h1>Ajanta – Crafting Engaging & High-Performance Websites</h1>
+        <h1>AD – Crafting Engaging & High-Performance Websites</h1>
         <a href="#contact"> <button>Get Started</button> </a>
         {/* <div className={styles.tabs}>
           <button>iOS Version</button>
           <button>Android Version</button>
         </div> */}
         <div className={styles.buttons}>
-          <a href="https://yourwebsite.com" target="_blank" className={styles.button}>Website</a>
-          <a href="https://github.com/yourrepo" target="_blank" className={styles.button}>GitHub</a>
+          <a href="https://primedesign.com.au/" target="_blank" className={styles.button}>Website</a>
+          <a href="https://github.com/das744" target="_blank" className={styles.button}>GitHub</a>
         </div>
       </div>
 
       <div className={styles.heroImage}>
         <div className={styles.socialIcons}>
-        <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-<a href="#"><i className="fa-brands fa-instagram"></i></a>
-<a href="#"><i className="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/PrimeDesign/"><i className="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/primedesignweb/"><i className="fa-brands fa-instagram"></i></a>
+<a href="https://codepen.io/ajantad"><i className="fa-brands fa-codepen"></i></a>
 
         </div>
       </div>

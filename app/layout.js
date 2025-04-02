@@ -4,7 +4,7 @@ import '../style/globals.css';
 
 export const metadata = {
   title: "Portfolio Website",
-  description: "Your website description",
+  description: "I am a freelance Web Developer ",
 };
 
 export default function RootLayout({ children }) {
