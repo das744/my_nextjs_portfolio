@@ -31,7 +31,7 @@ const portfolioData = [
     title: "Math Tutoring Website",
     description:
       "n educational platform offering tutor booking, and interactive resources.Created using React, HTML, CSS, and JS.",
-      website: "https://fredostutoring.com/",
+      website: "https://fredostutoring.net/",
       github: "https://github.com/das744/mathtutor",
   },
   {
@@ -56,7 +56,7 @@ const portfolioData = [
     title: "Music Lesson Website",
     description: "An educational platform offering tutor booking, and interactive resources.",
     website: "https://merndaguitarlesson.vercel.app/",
-    github: "https://github.com/das744/nextjs-theme",
+    github: "https://github.com/das744/mernda_guitar_lesson",
   },
   {
     id: 8,

@@ -7,15 +7,15 @@ export const servicesData = [
   },
   {
     id: 2,
-    icon: "fas fa-code",
-    title: "UI/UX Design",
-    description: "Engaging, user-friendly interfaces for better user experience.",
+    icon: "fas fa-mobile-alt",  
+    title: "Mobile App Development",
+    description: "Building intuitive and responsive apps."
   },
   {
     id: 3,
-    icon: "fas fa-mobile-alt",
+    icon: "fas fa-shopping-cart",
     title: "E-Commerce Solutions",
-    description: "Scalable online stores with seamless checkout experiences.",
+    description: "Creating scalable online store experiences."
   },
   {
     id: 4,
@@ -25,9 +25,9 @@ export const servicesData = [
   },
   {
     id: 5,
-    icon: "fas fa-tachometer-alt",
-    title: "Performance",
-    description: "Enhancing speed and usability.",
+    icon: "fas fa-code",
+    title: "UI/UX Design",
+    description: "Engaging, user-friendly interfaces for better user experience.",
   },
   {
     id: 6,
